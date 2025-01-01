@@ -19,9 +19,13 @@ calisan2.No = 9878787;
 calisan2.Departman = "s2";
 calisan2.CalisanBilgileri();
 
+Calisan calisan3 = new Calisan("qwe","asd",5678657,"s3");
 
+calisan3.CalisanBilgileri();
+
+Calisan calisan4 = new Calisan("pou", "jkl");
+calisan4.CalisanBilgileri();
 //Console.ReadLine();
-
 
 class Calisan
 {
@@ -30,6 +34,23 @@ class Calisan
     public string Soyad;
     public int No;
     public string Departman;
+
+    public Calisan(string ad,string soyad,int no, string departman) {
+        this.Ad = ad;
+        this.Soyad = soyad;
+        this.No = no;
+        this.Departman = departman;
+    }
+    public Calisan()
+    {
+    }
+    public Calisan(string ad, string soyad)
+    {
+        this.Ad = ad;
+        this.Soyad = soyad;
+    }
+
+
 
     public void CalisanBilgileri()
     {
